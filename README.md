@@ -31,4 +31,4 @@ Sample Request:- http://localhost:8080/github/popularRepositories?count=10&creat
 
 #### Live Demo of the Applicaion
 - A live version of the application is deployed using Google Kubernetes Engine (GKE) and GitActions in Google Cloud Platform (GCP).
-- Please use the url:- http://localhost:8080/swagger-ui/index.html for checking out the API using swagger documentation.
+- Please use the url:- [http://localhost:8080/swagger-ui/index.html](https://201.159.193.35.bc.googleusercontent.com/swagger-ui/index.html) for checking out the API using swagger documentation. (The link is generated using Reverse IP lookup).

@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: techlearn-gitactions-gke
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: techlearn-gitactions-gke
+  template:
+    metadata:
+      labels:
+        app: techlearn-gitactions-gke
+    spec:
+      containers:
+        - name: app
+          image: gcr.io/PROJECT_ID/IMAGE:TAG
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080

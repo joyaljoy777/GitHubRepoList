@@ -43,7 +43,6 @@ public class GithubRepoController {
             @RequestParam(defaultValue = "2019-01-10") @NotBlank String createdDate,
             @RequestParam(required = false) String programmingLanguage) throws InvalidDateException, ServerException {
 
-        log.info("Received repo request");
         var githubRepo = githubRepoService.getPopularRepositories(count, createdDate, programmingLanguage);
         return ResponseEntity.status(HttpStatus.OK).body(GithubRepoUtils.getGithubRepoDto(githubRepo));
     }
